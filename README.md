@@ -51,5 +51,5 @@ incase you want to contribute to the project fork the repository and make change
 * email [bethnduta05@gmail.com]
 * slack bethnduta
 
-LICENSE
+## LICENSE
 MIT Copyright (c) 2022
