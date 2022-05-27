@@ -17,6 +17,7 @@
 <body class="m-5">
     <div class="container">
         <div class="row">
+            
             <div class="col-md-3">
                 <div class="card" >
                     <div class="card-header">
@@ -24,8 +25,9 @@
                     </div>
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">An item</li>
-                      <li class="list-group-item">A second item</li>
-                      <li class="list-group-item">A third item</li>
+                      {% for category in categories %}
+                      <li class="list-group-item">{{category.name}}</li>
+                      {% endfor %}
                       <a href="{%url 'add' %}" class="btn btn-block btn-dark btn-sm m-1">Add Photo</a>
                       
                     </ul>
@@ -42,35 +44,6 @@
                             <a href="{% url 'photo' 5%}" class="btn btn-outline-dark btn-sm m-1">View</a>
                     </div>
                       </div>
-                      <div class="col-md-4">
-                        <div class="card" >
-                            <img src="https://images.unsplash.com/photo-1537151608828-ea2b11777ee8?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=80&raw_url=true&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=394" class="image-thumbnail" alt="...">
-                            <div class="card-body">
-                              <small>Category: Pets</small>
-                            </div>
-                            <a href="{% url 'photo' 5%}" class="btn btn-outline-dark btn-sm m-1">View</a>
-                    </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card" >
-                            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" class="image-thumbnail" alt="...">
-                            <div class="card-body">
-                              <small>Category: Pets</small>
-                            </div>
-                            <a href="{% url 'photo' 5%}" class="btn btn-outline-dark btn-sm m-1">View</a>
-                    </div>
-                      </div>
-                      <div class="col-md-4">
-                        <div class="card" >
-                            <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80" class="image-thumbnail" alt="...">
-                            <div class="card-body">
-                              <small>Category: Pets</small>
-                            </div>
-                            <a href="{% url 'photo' 5%}" class="btn btn-outline-dark btn-sm m-1">View</a>
-                    </div>
-                      </div>
-
-                </div>
             </div>
         </div>
     </div>
