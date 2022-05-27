@@ -38,11 +38,11 @@
                     {% for photo in photos %}
                     <div class="col-md-4">
                         <div class="card" >
-                            <img src="{{photo.image.url}}" class="image-thumbnail" alt="card image cap">
+                            <img src="{{photo.image.url}}" class="image-thumbnail" alt="..">
                             <div class="card-body">
-                              <small>Category: Pets</small>
+                              <small>Category: {{photo.category.name}}</small>
                             </div>
-                            <a href="{% url 'photo' 5%}" class="btn btn-outline-dark btn-sm m-1">View</a>
+                            <a href="{% url 'photo' photo.id %}" class="btn btn-outline-dark btn-sm m-1">View</a>
                     </div>
                       </div>
                       {% empty %}
