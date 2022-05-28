@@ -7,7 +7,8 @@ class Category(models.Model):
     def __str__(self):
         return self.name
     
-    def 
+    def save_Category(self):
+        self.save()
     
 class Photo(models.Model):
     category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True, blank=True)
@@ -16,3 +17,5 @@ class Photo(models.Model):
     
     def __str__(self):
         return self.description
+    
+    def save
