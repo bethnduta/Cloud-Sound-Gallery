@@ -18,4 +18,4 @@ class Photo(models.Model):
     def __str__(self):
         return self.description
     
-    def save
+    def save_photo
