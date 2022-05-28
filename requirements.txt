@@ -8,7 +8,7 @@ certifi==2021.5.30
 cffi==1.15.0
 click==8.1.2
 colorama==0.4.4
-setuptools==0.7.3 
+distlib==0.3.2
 Django==3.2.10
 django-filter==21.1
 django-storages==1.12.3
