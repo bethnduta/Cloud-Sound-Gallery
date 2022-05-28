@@ -1,6 +1,9 @@
 ## Cloud Sound Gallery App
 This is my first Django Independent Project
 
+## SCREENSHOT
+![image](https://user-images.githubusercontent.com/85553801/170823580-d7dc4396-29bb-473d-8c4f-789ab65e6267.png)
+
 ## Description
 Cloud Sound is a photo web application that showcase beautiful photos in different categories.
 As a user you can:
