@@ -20,5 +20,7 @@ class CategoryTestClass(TestCase):
         category=Category.objects.filter(category='food').first()
         update = Category.objects.filter(id=category.id).update(category='food')
         updated= Category.objects.filter(category='food').first()
-        self.assertTrue(Category.category,updated.category)        
+        self.assertTrue(Category.category,updated.category) 
+        
+class Photo()               
      
