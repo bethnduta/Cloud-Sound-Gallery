@@ -22,5 +22,9 @@ class CategoryTestClass(TestCase):
         updated= Category.objects.filter(category='food').first()
         self.assertTrue(Category.category,updated.category) 
         
-class Photo()               
+class PhotoTestClass(TestCase):
+    '''
+    test for photo class
+    '''
+                 
      
