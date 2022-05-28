@@ -26,5 +26,18 @@ class PhotoTestClass(TestCase):
     '''
     test for photo class
     '''
-                 
+    
+    # setup method
+    def setUp(self):
+        self.description= Photo(name='description')
+        
+    # Testing instance
+    def test_instance(self):
+        self.assertTrue(isinstance(self.description, Photo))
+        
+    #Testing Save method
+    def test_save_method(self):
+        self.description.save_photo()
+        photos=Photo.objects.all()
+        self.assertTrue(len(photos)>0)                 
      
