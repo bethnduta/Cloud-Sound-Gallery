@@ -1,6 +1,9 @@
 ## Cloud Sound Gallery App
 This is my first Django Independent Project
 
+## SCREENSHOT
+![image](https://user-images.githubusercontent.com/85553801/170823580-d7dc4396-29bb-473d-8c4f-789ab65e6267.png)
+
 ## Description
 Cloud Sound is a photo web application that showcase beautiful photos in different categories.
 As a user you can:
@@ -53,3 +56,12 @@ incase you want to contribute to the project fork the repository and make change
 
 ## LICENSE
 MIT Copyright (c) 2022
+ 
+ Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ 
+ ## ACKNOWLEDGEMENTS
+ I acknowledge Maryann Mwikali as my technical mentor while learning Django
