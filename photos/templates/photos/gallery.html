@@ -24,11 +24,11 @@
                         Categories
                     </div>
                     <ul class="list-group list-group-flush">
-                      <li class="list-group-item">An item</li>
+                      <li class="list-group-item">photos</li>
                       {% for category in categories %}
                       <li class="list-group-item">{{category.name}}</li>
                       {% endfor %}
-                      <a href="{%url 'add' %}" class="btn btn-block btn-dark btn-sm m-1">Add Photo</a>
+                      <a href="{%url 'add' %}" class="btn btn-block btn-success btn-sm m-1">Add Photo</a>
                       
                     </ul>
                   </div>
@@ -42,7 +42,7 @@
                             <div class="card-body">
                               <small>Category: {{photo.category.name}}</small>
                             </div>
-                            <a href="{% url 'photo' photo.id %}" class="btn btn-outline-dark btn-sm m-1">View</a>
+                            <a href="{% url 'photo' photo.id %}" class="btn btn-secondary btn-sm m-1">View description</a>
                     </div>
                       </div>
                       {% empty %}
