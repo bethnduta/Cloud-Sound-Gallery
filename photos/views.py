@@ -5,11 +5,11 @@ def gallery(request):
     categories = Category.objects.all()
     photos = Photo.objects.all()
     context = {'categories': categories, 'photos': photos}
-    return render(request, 'photos/gallery.html', context)
+    return render(request, 'gallery.html', context)
 
 def viewPhoto(request, pk):
     photos = Photo.objects.get(id=pk)
-    return render(request, 'photos/photo.html', {'photo':photos})
+    return render(request, 'photo.html', {'photo':photos})
 
 def addPhoto(request):
     categories = Category.objects.all()
@@ -33,4 +33,10 @@ def addPhoto(request):
 
 
     context = {'categories': categories}
-    return render(request, 'photos/add.html', context)
+    return render(request, 'add.html', context)
+
+def search(request):
+      if 'category' in request.GET and request.GET['category']:
+        category = request.GET.get('category')
+        photos = Photo.objects.filter(category__name__icontains=category)
+        return render(request, 'search.html', {'photos':photos})

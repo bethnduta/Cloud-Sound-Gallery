@@ -20,3 +20,7 @@ class Photo(models.Model):
     
     def save_photo(self):
         self.save()
+
+    def search_photos(category):
+        photos = Photo.objects.filter(category__name__icontains=category)
+        return photos        
